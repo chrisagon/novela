@@ -37,7 +37,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: novela_api
-          platforms: linux/amd64
+          platforms: linux/arm64
           push: true
           tags: |
             razikus/novela:api-${{ steps.extract_tag.outputs.tag }}
@@ -47,7 +47,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: novela-gui
-          platforms: linux/amd64
+          platforms: linux/arm64
           push: true
           tags: |
             razikus/novela:gui-${{ steps.extract_tag.outputs.tag }}
