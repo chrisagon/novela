@@ -4,11 +4,11 @@
       <div class="col-md-10 col-sm-12">
         <q-card>
           <q-toolbar class="bg-secondary text-white q-pa-sm">
-            Basic application settings
+            Reglage de base de l application
           </q-toolbar>
           <div class="q-pa-md">
-            <q-input v-model="api_key" label="New OpenAPI Key" type="password"></q-input>
-            <q-btn @click="setApiKey" color="accent" label="Set new API Key"></q-btn>
+            <q-input v-model="api_key" label="Nouvelle cle OpenAI" type="password"></q-input>
+            <q-btn @click="setApiKey" color="accent" label="Svg nouvelle cle API"></q-btn>
           </div>
         </q-card>
 
