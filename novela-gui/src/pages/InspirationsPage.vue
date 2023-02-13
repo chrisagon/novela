@@ -4,13 +4,13 @@
       <div class="col-md-10 col-sm-12">
         <q-card class="">
           <q-toolbar class="bg-secondary text-white q-pa-sm">
-            Create your inspiration! (Everything is saved in inspiration book)<q-space /><q-btn @click="makeInspiration"
-              class="coloredbutton bg-white" :disabled="loading" label="Create!"></q-btn>
+            Créez votre inspiration ! (Tout est enregistré dans le livre d'inspiration)<q-space /><q-btn @click="makeInspiration"
+              class="coloredbutton bg-white" :disabled="loading" label="Creation!"></q-btn>
           </q-toolbar>
           <q-card-actions class="q-pa-md">
             <q-input v-model="inspiration.kind" class="inputek" dense label="Kind of story? (fantasy)"
-              ></q-input><q-input v-model="inspiration.somethingAbout" class="inputek" dense label="Story about what?"></q-input>
-            <q-toggle class="inputek" label="Full auto (if disabled - you have full control over generation with story about what field)" v-model="inspiration.fullAuto"></q-toggle>
+              ></q-input><q-input v-model="inspiration.somethingAbout" class="inputek" dense label="Histoire à propos de quoi ?"></q-input>
+            <q-toggle class="inputek" label="Mode automatique complet (si désactivé - vous avez le contrôle total sur la génération avec l'histoire sur quel champ)" v-model="inspiration.fullAuto"></q-toggle>
           </q-card-actions>
 
 
@@ -22,7 +22,7 @@
             <q-input readonly v-model="loaded.text" rows="20" type="textarea"></q-input>
           </q-card-section>
           <img v-if="loaded.image" :src="`/api/v1/images/get/${loaded.image}`">
-          <q-inner-loading :showing="loading">
+          <q-inner-loading :showing="Laissez-moi reflechir">
             <q-spinner-ball size="50px" class="coloredbutton" />
           </q-inner-loading>
         </q-card>
