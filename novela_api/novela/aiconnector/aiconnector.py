@@ -94,7 +94,7 @@ class AiSummarizer:
     def whatIsThatAbout(self, content, max_tokens=256):
         req = {
             "model": self.model,
-            "prompt": "Générez un court résumé d'une phrase qui pourrait être applicable comme entrée DALEE2 en anglais, avec un maximum de 12 mots, sur ce sujet : \n" + content,
+            "prompt": "Générez un court résumé d'une phrase qui pourrait être applicable comme entrée DALL-E en anglais, avec un maximum de 12 mots, sur ce sujet : \n" + content,
             "max_tokens": max_tokens,
             "temperature": 0.8,
             "n": 1
