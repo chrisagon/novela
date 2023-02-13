@@ -5,19 +5,19 @@
     <q-card>
       <q-card-section class="row items-center">
         <q-avatar icon="note" color="primary" text-color="white" />
-        <span class="q-ml-sm">Fill the form and hit Create!</span>
+        <span class="q-ml-sm">Remplissez le formulaire et cliquez sur Créer !</span>
       </q-card-section>
       <q-card-section class="row ">
-        <q-input class="inputbook" v-model="newBook.title" label="Book name"></q-input>
-        <q-input class="inputbook" v-model="newBook.author" label="Book author"></q-input>
+        <q-input class="inputbook" v-model="newBook.title" label="Titre du livre"></q-input>
+        <q-input class="inputbook" v-model="newBook.author" label="Auteur du livre"></q-input>
         <q-input class="inputbook" v-model="newBook.description"
-          label="Book short description (Small kid found his love on the moon)"></q-input>
-        <q-input class="inputbook" v-model="newBook.kind" label="Book kind (fantasy, romance)"></q-input>
+          label="Courte description du livre (Ma recherche du tresor sur la Lune)"></q-input>
+        <q-input class="inputbook" v-model="newBook.kind" label="Genre de livre (fantasy, romance)"></q-input>
       </q-card-section>
 
       <q-card-actions align="right">
         <q-btn flat label="Cancel" color="primary" v-close-popup />
-        <q-btn flat label="Create" color="primary" @click="create" />
+        <q-btn flat label="Créer" color="primary" @click="create" />
       </q-card-actions>
       <q-inner-loading :showing="loadingCreate">
         <q-spinner-ball size="50px" class="coloredloader" />
@@ -25,7 +25,7 @@
     </q-card>
   </q-dialog>
   <q-page padding>
-    <q-btn @click="addNewBook = true" label="Add new" color="accent" icon="add"></q-btn>
+    <q-btn @click="addNewBook = true" label="Ajouter " color="accent" icon="add"></q-btn>
     <div class="row">
       <div class="col-md-4 col-sm-6 q-pa-md" v-for="book in books" v-bind:key="book.uid">
         <q-card class="my-card" >
