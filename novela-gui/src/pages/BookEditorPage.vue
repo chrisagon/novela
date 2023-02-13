@@ -20,10 +20,10 @@
 
                 <q-list dense style="min-width: 100px">
                   <q-item @click="storyProposition('')" clickable v-close-popup>
-                    <q-item-section>Trouvez une proposition d'histoire ici</q-item-section>
+                    <q-item-section>Trouvez une proposition d histoire ici</q-item-section>
                   </q-item>
                   <q-item @click="storyProposition('full of action')" clickable v-close-popup>
-                    <q-item-section>Trouvez une proposition d'action complète ici</q-item-section>
+                    <q-item-section>Trouvez une proposition d action complète ici</q-item-section>
                   </q-item>
                   <q-item @click="storyProposition('crazy')" clickable v-close-popup>
                     <q-item-section>Trouvez une proposition folle ici</q-item-section>
