@@ -35,11 +35,13 @@ Tout est au format markdown.
 
 ```
 git clone https://github.com/chrisagon/novela
-
+```
+==Ne pas oublier de mettre à jour la clé API OPENAI==
+```
 docker-compose up -d
 ```
 
-Your novela installation will run on http://localhost:80
+Votre application novela se lancera ici  http://localhost:80
 
 
 ## License
