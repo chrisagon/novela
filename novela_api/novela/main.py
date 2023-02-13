@@ -182,19 +182,19 @@ async def inspire_me(req: CreateInspirationReq, dbClient: BookClient = Depends(g
         image = connector.imageClient.getImageForSentence("Bowl of tousands of thoughs and mist, fantasy digital art", size = "512x512", withStyle = "fantasy")
         dbClient.addNewBook(BookShort(
             uid = inspirationbook,
-            title  = "Book of inspirations",
+            title  = "Livre d inspirations",
             kind = "fantasy",
-            author = "Everyone",
-            description = "Contains every inspiration that you created",
+            author = "ToutleMonde",
+            description = "Contient chaque inspiration que vous avez créée",
             image = image[0]
         ))
         
     if(req.fullAuto):
         about = ""
         if(req.somethingAbout and req.somethingAbout != ""):
-            about = "about " + req.somethingAbout
+            about = "a propos de " + req.somethingAbout
 
-        story = connector.storyCompletor.completeStory(f"Geneate a creative {req.kind} story or novel or poem or text {about}", temperature=0.8, max_tokens=req.length)
+        story = connector.storyCompletor.completeStory(f"Genere une histoire ou un poeme ou un texte du genre {req.kind}  {about}", temperature=0.8, max_tokens=req.length)
         dbClient.setLastAIAction("INSPIRATIONS", json.dumps(story).encode("utf-8"))
         firstChoice = story["choices"][0]["text"]
         dbClient.saveBookContent(inspirationbook, firstChoice)
