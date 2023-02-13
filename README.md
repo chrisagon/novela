@@ -5,19 +5,19 @@ https://novela.ink
 [![Novela (click)](./assets/readme.png)](https://novela.ink/)
 
 
-Novela ink is your own personal AI assistant platform to create/modify/enchance your stories.
+Novela ink est votre propre plateforme d'assistant AI personnel pour créer/modifier/enchanter vos histoires.
 
-With power of OpenAI it was possible to create a storywritter that can really fit into your needs.
+Avec la puissance d'OpenAI, il a été possible de créer un storywritter qui peut vraiment s'adapter à vos besoins.
 
-With minimal effort you can quickly create PoC of stories, books, and creations.
+Avec un effort minimal, vous pouvez rapidement créer des histoires, des livres et des créations.
 
-You don't need expensive graphic designers, and copywriters.
+Vous n'avez pas besoin de graphistes et de rédacteurs coûteux.
 
-It also helps with gettings an inspiration!
+Cela aide aussi à trouver l'inspiration !
 
-And everything is tamperproof, and immutable thanks to [immudb](https://immudb.io), so you can't really lose your creations.
+Et tout est inviolable et immuable grâce à [immudb](https://immudb.io), vous ne pouvez donc pas vraiment perdre vos créations.
 
-Everything in cool markdown format.
+Tout est au format markdown.
 
 # Getting started
 
@@ -25,13 +25,16 @@ Everything in cool markdown format.
 
 [![Novela (click)](https://img.youtube.com/vi/e14Tk476YOM/0.jpg)](https://www.youtube.com/watch?v=e14Tk476YOM)
 
-
+## TODO
+- traduire les prompts en français
+- adapter de amd64 vers arm64 pour installation sur VM
+- 
 ## Installation
 
 ### with docker-compose <small>recommended</small> { #with-docker data-toc-label="with docker" }
 
 ```
-git clone https://github.com/razikus/novela
+git clone https://github.com/chrisagon/novela
 
 docker-compose up -d
 ```
