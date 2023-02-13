@@ -20,42 +20,42 @@
 
                 <q-list dense style="min-width: 100px">
                   <q-item @click="storyProposition('')" clickable v-close-popup>
-                    <q-item-section>Find a story proposition here</q-item-section>
+                    <q-item-section>Trouvez une proposition d'histoire ici</q-item-section>
                   </q-item>
                   <q-item @click="storyProposition('full of action')" clickable v-close-popup>
-                    <q-item-section>Find a full of action proposition here</q-item-section>
+                    <q-item-section>Trouvez une proposition d'action complète ici</q-item-section>
                   </q-item>
                   <q-item @click="storyProposition('crazy')" clickable v-close-popup>
-                    <q-item-section>Find a crazy proposition here</q-item-section>
+                    <q-item-section>Trouvez une proposition folle ici</q-item-section>
                   </q-item>
                   <q-item @click="storyProposition('sad')" clickable v-close-popup>
-                    <q-item-section>Find a sad proposition here</q-item-section>
+                    <q-item-section>Trouvez une proposition triste ici</q-item-section>
                   </q-item>
                   <q-item @click="storyProposition('funny')" clickable v-close-popup>
-                    <q-item-section>Find a funny proposition here</q-item-section>
+                    <q-item-section>Trouvez une proposition amusante ici</q-item-section>
                   </q-item>
                   <q-item @click="storyProposition('unexpected')" clickable v-close-popup>
-                    <q-item-section>Find a unexpected proposition here</q-item-section>
+                    <q-item-section>Trouvez une proposition inattendue ici</q-item-section>
                   </q-item>
                   <q-item @click="storyProposition(bookInfo.kind)" clickable v-close-popup>
-                    <q-item-section>Find a "{{bookInfo.kind}}" proposition here</q-item-section>
+                    <q-item-section>Trouvez une proposition "{{bookInfo.kind}}" ici</q-item-section>
                   </q-item>
                   <q-separator />
                   <q-item @click="insertImage" clickable v-close-popup>
-                    <q-item-section>Generate an image as summary (for chapter or selected selection)</q-item-section>
+                    <q-item-section>Générer une image comme résumé (pour le chapitre ou la sélection choisie)</q-item-section>
                   </q-item>
                   <q-item @click="insertImageForSentence" clickable v-close-popup>
-                    <q-item-section>Generate an image for selected sentence</q-item-section>
+                    <q-item-section>Générer une image pour la phrase sélectionnée</q-item-section>
                   </q-item>
                   <q-separator />
                   <q-item clickable v-close-popup>
-                    <q-item-section>Quit menu</q-item-section>
+                    <q-item-section>Quitter le menu</q-item-section>
                   </q-item>
                 </q-list>
 
               </q-menu>
 
-              <q-inner-loading :showing="loading">
+              <q-inner-loading :showing="Laissez-moi reflechir...">
                 <q-spinner-ball size="50px" class="coloredloader" />
               </q-inner-loading>
             </q-input>
@@ -186,7 +186,7 @@ export default {
         let data = await this.$novelaAPI.save(this.$route.params.id, this.markdown)
         this.revision = 0
         this.q.notify({
-          message: "Content saved",
+          message: "Contenu sauvegardé",
           color: "positive",
           timeout: 100
         })
@@ -197,7 +197,7 @@ export default {
       let data = await this.$novelaAPI.save(this.$route.params.id, this.markdown)
       this.revision = 0
       this.q.notify({
-        message: "Content saved",
+        message: "Contenu sauvegardé",
         color: "positive",
         timeout: 100
       })
