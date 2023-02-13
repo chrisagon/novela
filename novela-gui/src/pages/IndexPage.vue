@@ -9,7 +9,7 @@
     <div class="center">
     <hr/>
     <p class="text-h2">novela.ink</p>
-    <p>Your friendly AI assistent for <span class="text-h6 colored changing"></span> </p>
+    <p>Votre assistant créatif d intelligence augmentée pour <span class="text-h6 colored changing"></span> </p>
     
   </div>
   </div>
@@ -21,13 +21,13 @@
 }
 
 .changing::before {
-    content: "novels";
+    content: "nouvelles";
     animation: animate infinite 5s;
 }
 
 @keyframes animate {
     10% {
-        content: "stories";
+        content: "Histoires";
     }
     20% {
         content: "dramas";
@@ -36,19 +36,19 @@
         content: "prose";
     }
     40% {
-        content: "poetry";
+        content: "poesie";
     }
     50% {
         content: "epics";
     }
     60% {
-        content: "chronicles";
+        content: "chroniques";
     }
     70% {
-        content: "poems";
+        content: "poemes";
     }
     80% {
-        content: "guidebooks";
+        content: "guides";
     }
     90% {
         content: "bestsellers";
